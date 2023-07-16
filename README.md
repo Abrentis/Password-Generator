@@ -1,100 +1,66 @@
-# 03 JavaScript: Password Generator
+# <Your-Project-Title>
 
-## Your Task
+## Description
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+- What was your motivation?
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+- What problem does it solve?
+- What did you learn?
 
-## User Story
+In today's era of computer technology, the requirements for having a strong, secure password have become more and more demanding. It wasn't too long ago where a password with only six lowercase letters and one number was considered "safe." Passwords nowadays typically require eight characters (a combination of lowercase and uppercase letters, numbers, and symbols) at the bare minimum. For employees with sensitive work documents and data, even longer passwords are necessary to ensure others are unable to access their files.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+In hopes to improve upon the complexity of creating passwords, I designed the functionality of this website to generate a random password. Sometimes, if left to individuals to come up with multiple passwords to access different sets of private information, they may be prone to using similar passwords (if not the same password) for different access points. Generating random passwords for each point of entry eliminates the possibility of someone using the same password more than once.
 
-## Acceptance Criteria
+Upon beginning to write the necessary code to generate a random password, I very quickly noticed how conceptually simple the functions of a website are from the user point of view, but from the coder's perspective, writing functions can get overwhelming at times. For example, simply making lists of lowercase or uppercase letters is not an intuitive process in coding, and there are multiple ways to go about making alphabetical lists.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+## Usage
 
-## Mock-Up
+Here is what the website looks like upon opening it: (GitHub pages URL: https://abrentis.github.io/Password-Generator/)
 
-The following image shows the web application's appearance and functionality:
+![Password Generator website](./assets/images/Password-generator-website.jpg)
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+To generate a password, click on the 'Generate Password' button.
 
-## Grading Requirements
+![Generate password button](./assets/images/Generate-password-button.jpg)
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+You will be prompted with a window to enter how many characters you would like your password length to be. If 'Cancel' is pressed, the process of generating a password is aborted.
 
-This Challenge is graded based on the following criteria: 
+![Window asking user how many characters in length they would like their password to be](./assets/images/Character-length.jpg)
 
-### Technical Acceptance Criteria: 40%
+If an invalid entry is entered and submitted pressing 'OK', a window will pop up asking you to 'Please enter a number from 8 to 128,' which will then return you to the previous window. 
 
-* Satisfies all of the preceding acceptance criteria.
+![Alert window telling the user to enter a number between 8 and 128](./assets/images/Invalid-entry.jpg)
 
-### Deployment: 32%
+For each of the following character type categories, a window pops up asking you to 'Press OK to confirm including [characters of specified character type] in your password.' If you select 'OK' for a particular character type category, characters of that character type will be included in your randomly generated password. If 'Cancel' is selected, characters of that character type will not be included in your randomly generated password, but you will have the opportunity to select other character type categories.
 
-* Application deployed at live URL.
+### Character Type Categories
 
-* Application loads with no errors.
+Lowercase Letters
 
-* Application GitHub URL submitted.
+![Window to include lowercase letters in password](./assets/images/Lowercase-letters.jpg)
 
-* GitHub repository that contains application code.
+Uppercase Letters
 
-### Application Quality: 15%
+![Window to include uppercase letters in password](./assets/images/Uppercase-letters.jpg)
 
-* Application user experience is intuitive and easy to navigate.
+Numbers
 
-* Application user interface style is clean and polished.
+![Window to include numbers in password](./assets/images/Numbers.jpg)
 
-* Application resembles the mock-up functionality provided in the Challenge instructions.
+Special Characters
 
-### Repository Quality: 13%
+![Window to include special characters in password](./assets/images/Special-characters.jpg)
 
-* Repository has a unique name.
+Here is an example of a randomly generated password that includes all different character types:
 
-* Repository follows best practices for file structure and naming conventions.
+![Image of a randomly generated password](./assets/images/Generated-password.jpg)
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+If you entered a valid password length but selected 'Cancel' for all character type categories, a window will pop up stating 'No character types were selected,' and a random password will not be generated.
 
-* Repository contains multiple descriptive commit messages.
+![Window stating 'No character types were selected!'](./assets/images/No-character-types.jpg)
 
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
+## License
 
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+MIT License (please refer to license file in GitHub repository for more information)

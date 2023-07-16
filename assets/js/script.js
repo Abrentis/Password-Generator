@@ -51,7 +51,7 @@ function generatePassword() {
   };
 
   if (completeArray.length == 0) {
-    alert("No criteria were selected!");
+    alert("No character types were selected!");
     return;
   };
 
