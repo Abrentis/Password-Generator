@@ -10,15 +10,18 @@ function generatePassword() {
 
   // Establishes length of password
   var passwordLength = prompt("How many characters would you like your password to have? (Minimum: 8 | Maximum: 128)");
-  if (!passwordLength) {
+  
+      // Closes window when user presses 'Cancel'
+    if (!passwordLength && passwordLength == null) {
+      return;
+    }
+      // Resets if user enters a number or character outside of the specified character limits
+    else if ((isNaN(passwordLength)) || (passwordLength == null) || (passwordLength < 8 || passwordLength > 128)) {
+      alert("Please enter a number from 8 to 128.");
+      generatePassword();
     return;
   }
-      // Resets if user enters a number outside of the specified character limits
-  else if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
-    alert("Please enter a number from 8 to 128.");
-    generatePassword();
-  };
-
+ 
   // Includes lowercase characters
   var passwordLowerCase = confirm("Press OK to confirm including lowercase letters in your password.");
   if (passwordLowerCase) {
