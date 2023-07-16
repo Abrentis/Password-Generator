@@ -14,7 +14,7 @@ function generatePassword() {
     return;
   }
       // Resets if user enters a number outside of the specified character limits
-  else if (passwordLength < 8 || passwordLength > 128) {
+  else if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
     alert("Please enter a number from 8 to 128.");
     generatePassword();
   };
