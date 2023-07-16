@@ -50,12 +50,20 @@ function generatePassword() {
     completeArray.push(...specialCharactersArray);
   };
 
+  if (completeArray.length == 0) {
+    alert("No criteria were selected!");
+    return;
+  };
+
   // 'For loop' that executes until the desired password length is reached
   for (i = 0; i < passwordLength; i++) {
     var passwordCalc = Math.floor(Math.random() * completeArray.length);
     var passwordName = completeArray[passwordCalc];
     var passwordText = document.querySelector("#password").value += (passwordName);
+    console.log(completeArray);
   };
+
+  // If a password length was entered but all criteria were cancelled, this keeps the textarea blank
 };
 
 // Event listener that responds to the button being clicked, then executes 'generatePassword' function
