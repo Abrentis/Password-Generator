@@ -15,7 +15,7 @@ function generatePassword() {
   if (!passwordLength && passwordLength == null) {
     return;
   }
-    // Resets if user enters a number or character outside of the specified character limits
+    // Resets if user enters something outside of the specified character limits
   else if ((isNaN(passwordLength)) || (passwordLength == null) || (passwordLength < 8 || passwordLength > 128)) {
     alert("Please enter a number from 8 to 128.");
     generatePassword();
@@ -50,7 +50,7 @@ function generatePassword() {
     completeArray.push(...specialCharactersArray);
   };
 
-  // Window pops up if a password length was entered but no character types categories were selected
+  // Window pops up if a password length was entered but no character type categories were selected
   if (completeArray.length == 0) {
     alert("No character types were selected!");
     return;
