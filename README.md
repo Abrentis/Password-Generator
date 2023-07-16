@@ -2,16 +2,9 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
 In today's era of computer technology, the requirements for having a strong, secure password have become more and more demanding. It wasn't too long ago where a password with only six lowercase letters and one number was considered "safe." Passwords nowadays typically require eight characters (a combination of lowercase and uppercase letters, numbers, and symbols) at the bare minimum. For employees with sensitive work documents and data, even longer passwords are necessary to ensure others are unable to access their files.
 
-In hopes to improve upon the complexity of creating passwords, I designed the functionality of this website to generate a random password. Sometimes, if left to individuals to come up with multiple passwords to access different sets of private information, they may be prone to using similar passwords (if not the same password) for different access points. Generating random passwords for each point of entry eliminates the possibility of someone using the same password more than once.
+In hopes to improve upon the complexity of creating passwords, I added to the functionality of this website by coming up with the code to generate a random password. Sometimes, if left to individuals to come up with multiple passwords to access different sets of private information, they may be prone to using similar passwords (if not the same password) for different access points. Generating random passwords for each point of entry eliminates the possibility of someone using the same password more than once.
 
 Upon beginning to write the necessary code to generate a random password, I very quickly noticed how conceptually simple the functions of a website are from the user point of view, but from the coder's perspective, writing functions can get overwhelming at times. For example, simply making lists of lowercase or uppercase letters is not an intuitive process in coding, and there are multiple ways to go about making alphabetical lists.
 
